@@ -55,7 +55,7 @@ a:hover{
 
 /* the hero section with a background */
 .hero{
-    background-image: url(./images/background-1.jpg);
+    background-image: url(/images/background.jpg);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
