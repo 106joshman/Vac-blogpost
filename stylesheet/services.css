@@ -14,7 +14,7 @@ body{
 }
 
 .serv-hero{
-    background-image: url(./images/images.jpeg);
+    background-image: url(/images/images.jpeg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
