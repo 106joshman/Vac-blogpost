@@ -1,15 +1,57 @@
-/* contact page section
-    All other styling for the header and footer are default from the home page styling
-*/
-
 *{
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
 body{
     font-family: sans-serif;
     background-image: linear-gradient(#603880, #503880, #583888);
-    height: 100vh;
+}
+
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    color: gray;
+    padding: 10px 9px;
+    height: 2em;
+}
+
+a{
+    text-decoration: none;
+    color: gray;
+    padding: 0 10px;
+    font-size: 13px;
+}
+
+a.active{
+    background-color: #304868;
+    border-radius: 7px;
+    padding: 5px 10px;
+    color: white;
+}
+
+a.active:hover{
+    border-bottom: none;
+}
+
+a:hover{
+    border-bottom: 1px solid gray;
+}
+
+.logo{
+    margin-left: 30px;
+}
+
+.logo a{
+    text-transform: uppercase;
+    font-size: 25px;
+}
+
+.logo h2 a:hover{
+    border-bottom: none;
 }
 
 .content{
@@ -36,7 +78,7 @@ body{
     line-height: 1.6;
 }
 
-ul{
+.content ul{
     margin-top: 2em;
     align-items: start;
 }
@@ -45,8 +87,16 @@ ul{
     display: inline;
     margin: 5px;
     list-style: none;
-    color: white;
     font-size: 12px;
+    text-decoration: none !important;
+}
+
+.fab, .fas{
+    color: white;
+}
+
+.content ul li a i:hover{
+    text-decoration: none;
 }
 
 .content li:nth-child(4){
@@ -107,8 +157,52 @@ input::selection{
     font-size: 15px;
 }
 
+/* the footer section */
 footer{
+    background: #002030;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
     bottom: 0;
     position: fixed;
+}
+
+/* the logo in the footer is hidden */
+footer .logo{
+    visibility: hidden;
+}
+
+footer .nav-bar{
+    background-color: transparent;
+    text-align: start;
+    font-size: smaller;
+    /* margin-left: 30px; */
+}
+
+/* the last anchor link in the footer is hidden */
+footer .active{
+    visibility: hidden;
+}
+
+.attribution {
+    font-size: 13px;
+    background: #002030;
+    text-align: center;
+    color: white;
+    margin-top: 1em;
+    height: 2em;
     width: 100%;
+}
+  
+.attribution a {
+    color: white;
+    text-decoration: none;
+    padding: 0px;
+}
+
+.attribution a:hover{
+    border-bottom: none;
+    color: blueviolet;
 }

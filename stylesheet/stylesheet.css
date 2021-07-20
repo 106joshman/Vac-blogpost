@@ -14,7 +14,7 @@ body{
     align-items: center;
     background-color: #000;
     color: gray;
-    padding: 10px 15px;
+    padding: 10px 9px;
     height: 2em;
 }
 
@@ -53,9 +53,23 @@ a:hover{
     border-bottom: none;
 }
 
+/* .hamburger{
+    display: none;
+}
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #101010;
+} */
+
 /* the hero section with a background */
 .hero{
-    background-image: url(/images/background-1.jpg);
+    background-image: url(/background-1.jpg);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -302,6 +316,45 @@ footer .active{
 /* for screen orientation below 780px */
 
 @media screen and (max-width: 768px){
+    /* .nav-links{
+        position: fixed;
+        left: -100%;
+        top: 2.1em;
+        flex-direction: column;
+        background-color: white;
+        width: 50%;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+
+    .nav-links.active{
+        left: 0;
+    }
+
+    .nav-links a{
+        display: block;
+        margin: 2rem 0;
+
+    }
+
+    .hamburger{
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    } */
+    
     .right{
         text-align: center;
     }
